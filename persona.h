@@ -80,6 +80,25 @@ public:
     void setPeso(double peso){
         this->peso= peso;
     }
+
+    double IMC(){
+        return this->peso / (this->estatura * this->estatura);
+    }
+
+    std::string toString(){
+        std::string datos= this->nombres + " " + this->apellidos + "\nedad: ";
+        datos += std::to_string(this->edad);
+        datos += " , altura: ";
+        datos += std::to_string(this->estatura);
+        datos += " m. , peso: ";
+        datos += std::to_string(this->peso);
+        datos += " kg.\n";
+        return datos;
+    }
+
 };
 
 #endif
+
+// Distintas formas de concatenar cadenas y números en C++
+// https://stackoverflow.com/questions/191757/how-to-concatenate-a-stdstring-and-an-int

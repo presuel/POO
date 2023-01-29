@@ -18,3 +18,6 @@ v2.1.2 - Area Triangulo (C++ & Java)
 v2.2.0 - Protoclase Persona (C++ & Java)
 
 v2.2.1 - Constructores, Setter&Getters Persona (C++ & Java)
+
+v2.2.2 - toString, IMC Persona (C++ & Java)
+

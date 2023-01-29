@@ -80,4 +80,18 @@ public class persona {
         this.peso = peso;
     }
 
+    public double IMC() {
+        return this.peso / (this.estatura * this.estatura);
+    }
+
+    public String toString() {
+        String datos = this.nombres + " " + this.apellidos + "\nedad: ";
+        datos += this.edad;
+        datos += " , altura: ";
+        datos += this.estatura;
+        datos += " m. , peso: ";
+        datos += this.peso;
+        datos += " kg.\n";
+        return datos;
+    }
 }
