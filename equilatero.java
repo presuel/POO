@@ -7,6 +7,7 @@ public class equilatero extends triangulo {
         super(base, altura);
     }
 
+    @Override
     public double Perimetro() {
         return 3.0 * this.base;
     }

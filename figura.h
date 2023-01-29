@@ -19,7 +19,7 @@ public:
         return this->lados;
     }
     // Abstracto
-    virtual double Area() = 0;
+    //virtual double Area() = 0;
 };
 
 #endif

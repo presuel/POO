@@ -1,4 +1,4 @@
-public class triangulo extends figura {
+public class triangulo extends figura implements poligono {
     // Atributos
     protected double base;
     protected double altura;
@@ -52,6 +52,10 @@ public class triangulo extends figura {
 
     public double Area() {
         return this.base * this.altura / 2;
+    }
+
+    public double Perimetro() {
+        return 0;
     }
 
 }

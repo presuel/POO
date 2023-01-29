@@ -28,6 +28,7 @@ public class escaleno extends triangulo {
         return this.ladoMayor;
     }
 
+    @Override
     public double Perimetro() {
         return this.ladoMenor + this.ladoMayor + this.base;
     }

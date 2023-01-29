@@ -18,6 +18,7 @@ public class isosceles extends triangulo {
         return this.ladosIguales;
     }
 
+    @Override
     public double Perimetro() {
         return (2.0 * this.ladosIguales) + this.base;
     }

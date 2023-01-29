@@ -2,8 +2,9 @@
 #define TRIANGULO_H_
 
 #include "figura.h"
+#include "poligono.h"
 
-class triangulo : public figura{
+class triangulo : public figura, public poligono {
     // Atributos 
 protected:    
     double base;
@@ -45,6 +46,9 @@ public:
     }
     double Area(){
         return this->base*this->altura/2;
+    }
+    double Perimetro(){
+        return 0;
     }
 };
 
