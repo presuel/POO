@@ -40,6 +40,9 @@ public:
     void setEsRectangulo(bool esRectangulo){
         this->esRectangulo= esRectangulo;
     }
+    double Area(){
+        return this->base*this->altura/2;
+    }
 };
 
 #endif

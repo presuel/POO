@@ -12,3 +12,6 @@ v1.3.0 - UML Producto
 v2.1.0 - Protoclase Triángulo (C++ & Java)
 
 v2.1.1 - Constructores, Setter&Getters Triangulo (C++ & Java)
+
+v2.1.2 - Area Triangulo (C++ & Java)
+

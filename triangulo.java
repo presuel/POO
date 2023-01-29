@@ -46,4 +46,8 @@ public class triangulo {
         this.esRectangulo = esRectangulo;
     }
 
+    public double Area() {
+        return this.base * this.altura / 2;
+    }
+
 }
