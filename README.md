@@ -21,3 +21,5 @@ v2.2.1 - Constructores, Setter&Getters Persona (C++ & Java)
 
 v2.2.2 - toString, IMC Persona (C++ & Java)
 
+v2.3.0 - Protoclase Producto (C++ Java)
+
