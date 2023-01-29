@@ -9,5 +9,6 @@ v1.2.0 - UML Persona
 
 v1.3.0 - UML Producto
 
-v2.0.1 - Protoclase Triángulo (C++ & Java)
+v2.1.0 - Protoclase Triángulo (C++ & Java)
 
+v2.1.1 - Constructores, Setter&Getters Triangulo (C++ & Java)
