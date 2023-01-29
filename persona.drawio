@@ -16,6 +16,68 @@
                 <mxCell id="5" value="+ Persona()&#10;+ Persona(string, string)&#10;+ Persona(string, string, int)&#10;+ Persona(string, string, int, double, double)&#10;+ getNombres() : string&#10;+ getApellidos() : string&#10;+ getEdad() : int&#10;+ getEstatura() : double&#10;+ getPeso() : double&#10;+ setNombres(string)&#10;+ setApellidos(string)&#10;+ setEdad(int)&#10;+ setEstatura(double)&#10;+ setPeso(double)&#10;+ IMC() : double &#10;+ toString() : string" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
                     <mxGeometry y="118" width="260" height="242" as="geometry"/>
                 </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="1" source="6" target="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="130" y="420"/>
+                            <mxPoint x="210" y="420"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="Estudiante" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="440" width="260" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="- matricula : string&#10;- fecha : string&#10;- asistencia : bool" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
+                    <mxGeometry y="26" width="260" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="6">
+                    <mxGeometry y="80" width="260" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="+ Estudiante()&#10;+ Estudiante(string, string, string)&#10;+ getMatricula() : string&#10;+ getFecha() : string&#10;+ getAsistencia() : bool&#10;+ setMatricula(string)&#10;+ setFecha(string)&#10;+ setAsistencia(bool)&#10;+ toString() : string" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
+                    <mxGeometry y="88" width="260" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="10">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="400" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="410" y="420"/>
+                            <mxPoint x="210" y="420"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="Docente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="440" width="260" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="- clave : string&#10;- horasContrato : int&#10;- pagoHora : double" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="10">
+                    <mxGeometry y="26" width="260" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="10">
+                    <mxGeometry y="80" width="260" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="+ Docente()&#10;+ Docente(string, string, string)&#10;+ getClave() : string&#10;+ getHorasContrato() : int&#10;+ getPagoHora() : double&#10;+ setClave(string)&#10;+ setHorasContrato(int)&#10;+ setPagoHora(double)&#10;+ toString() : string" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="10">
+                    <mxGeometry y="88" width="260" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="14">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="400" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="680" y="420"/>
+                            <mxPoint x="210" y="420"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Paciente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="440" width="260" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="- fecha : string&#10;- sintomas : string" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="14">
+                    <mxGeometry y="26" width="260" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="14">
+                    <mxGeometry y="70" width="260" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="+ Paciente()&#10;+ Paciente(string, string)&#10;+ getFecha() : string&#10;+ getSintomas() : string&#10;+ setFecha(string)&#10;+ setSintomas(string)&#10;+ toString() : string" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="14">
+                    <mxGeometry y="78" width="260" height="112" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>

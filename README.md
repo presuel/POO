@@ -29,3 +29,4 @@ v2.3.2 - Comprar, Vender (C++ Java)
 
 v3.1.0 - Herencia Figura/Circulo,Rectangulo,Triangulo/Equilatero,Isosceles,Escaleno Geometría (C++ & Java)
 
+v3.2.0 - Herencia Persona/Docente,Estudiante,Paciente Consultas (C++ & Java)

@@ -1,14 +1,28 @@
+import java.util.Scanner;
+
 public class consultas {
     public static void main(String[] args) {
-        persona persona1 = new persona("Andrea", "Presuel", 18);
-        persona1.setEstatura(1.75);
-        persona1.setPeso(57);
-        System.out.print("Persona 1\n");
-        System.out.print(persona1.toString());
-        System.out.println("IMC: " + persona1.IMC() + "\n");
-        persona persona2 = new persona("Aurora", "Presuel", 18, 1.77, 60);
-        System.out.print("Persona 2\n");
-        System.out.print(persona2.toString());
-        System.out.println("IMC: " + persona2.IMC() + "\n");
+        Scanner entrada = new Scanner(System.in);
+        paciente Paciente1 = new paciente();
+        // --------------------------------------------
+        System.out.println("Ingrese los nombres del paciente: ");
+        Paciente1.setNombres(entrada.nextLine());
+        System.out.println("Ingrese los apellidos del paciente: ");
+        Paciente1.setApellidos(entrada.nextLine());
+        System.out.println("Ingrese el peso: ");
+        // --------------------------------------------
+        Paciente1.setPeso(entrada.nextDouble());
+        entrada.nextLine();
+        System.out.println("Ingrese la estatura: ");
+        Paciente1.setEstatura(entrada.nextDouble());
+        entrada.nextLine();
+        // ----------------------------------------------
+        System.out.println("Ingrese la fecha de la consulta: ");
+        Paciente1.setFecha(entrada.nextLine());
+        System.out.println("Ingrese los síntomas: ");
+        Paciente1.setSintomas(entrada.nextLine());
+        System.out.println(Paciente1.toString());
+        // ----------------------------------------------
+        entrada.close();
     }
 }
