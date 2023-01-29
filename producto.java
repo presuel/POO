@@ -61,4 +61,14 @@ public class producto {
         this.cantidad = cantidad;
     }
 
+    public int Compra(int cantidad) {
+        this.cantidad += cantidad;
+        return this.cantidad;
+    }
+
+    public int Venta(int cantidad) {
+        this.cantidad -= cantidad;
+        return this.cantidad;
+    }
+
 }

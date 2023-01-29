@@ -65,6 +65,16 @@ public:
     void setCantidad(int cantidad) {
         this->cantidad = cantidad;
     }
+
+    int Compra(int cantidad){
+        this->cantidad += cantidad;
+        return this->cantidad;
+    }
+
+    int Venta(int cantidad){
+        this->cantidad -= cantidad;
+        return this->cantidad;
+    }
 };
 
 #endif
