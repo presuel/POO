@@ -1,4 +1,4 @@
-public abstract class persona {
+public abstract class persona implements id {
     private String nombres;
     private String apellidos;
     private int edad;

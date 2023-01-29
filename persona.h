@@ -2,8 +2,9 @@
 #define _PERSONA_H_
 
 #include <iostream>
+#include "id.h"
 
-class persona{
+class persona : public id{
 private:
     std::string nombres;
     std::string apellidos;
