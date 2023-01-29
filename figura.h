@@ -18,6 +18,8 @@ public:
     int getLados (){
         return this->lados;
     }
+    // Abstracto
+    virtual double Area() = 0;
 };
 
 #endif

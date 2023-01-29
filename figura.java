@@ -1,4 +1,4 @@
-public class figura {
+public abstract class figura {
     private int lados;
 
     public figura() {
@@ -17,5 +17,7 @@ public class figura {
     public int getLados() {
         return this.lados;
     }
+
+    public abstract double Area();
 
 }
