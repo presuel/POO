@@ -1,20 +1,20 @@
 <mxfile host="65bd71144e">
     <diagram id="38SM9jZFCd_MNtca0VpS" name="Page-1">
-        <mxGraphModel dx="453" dy="351" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="899" dy="426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Persona" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="80" y="40" width="160" height="144" as="geometry"/>
+                <mxCell id="2" value="Persona" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="40" width="260" height="340" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="+ nombres : string&#10;+ apellidos : string&#10;+ edad : int&#10;+ altura : double&#10;+ peso : double" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2">
-                    <mxGeometry y="26" width="160" height="84" as="geometry"/>
+                <mxCell id="3" value="- nombres : string&#10;- apellidos : string&#10;- edad : int&#10;- estatura: double&#10;- peso : double" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
+                    <mxGeometry y="26" width="260" height="84" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2">
-                    <mxGeometry y="110" width="160" height="8" as="geometry"/>
+                <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="2" vertex="1">
+                    <mxGeometry y="110" width="260" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value=" " style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2">
-                    <mxGeometry y="118" width="160" height="26" as="geometry"/>
+                <mxCell id="5" value="+ Persona()&#10;+ Persona(string, string)&#10;+ Persona(string, string, int)&#10;+ Persona(string, string, int, double, double)&#10;+ getNombres() : string&#10;+ getApellidos() : string&#10;+ getEdad() : int&#10;+ getEstatura() : double&#10;+ getPeso() : double&#10;+ setNombres(string)&#10;+ setApellidos(string)&#10;+ setEdad(int)&#10;+ setEstatura(double)&#10;+ setPeso(double)" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
+                    <mxGeometry y="118" width="260" height="222" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
