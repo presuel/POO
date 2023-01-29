@@ -1,4 +1,4 @@
-public class persona {
+public abstract class persona {
     private String nombres;
     private String apellidos;
     private int edad;
@@ -84,14 +84,17 @@ public class persona {
         return this.peso / (this.estatura * this.estatura);
     }
 
-    public String toString() {
-        String datos = this.nombres + " " + this.apellidos + "\nedad: ";
-        datos += this.edad;
-        datos += " , altura: ";
-        datos += this.estatura;
-        datos += " m. , peso: ";
-        datos += this.peso;
-        datos += " kg.\n";
-        return datos;
-    }
+    public abstract String toString();
+    /*
+     * public String toString() {
+     * String datos = this.nombres + " " + this.apellidos + "\nedad: ";
+     * datos += this.edad;
+     * datos += " , altura: ";
+     * datos += this.estatura;
+     * datos += " m. , peso: ";
+     * datos += this.peso;
+     * datos += " kg.\n";
+     * return datos;
+     * }
+     */
 }

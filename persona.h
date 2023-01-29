@@ -85,7 +85,8 @@ public:
         return this->peso / (this->estatura * this->estatura);
     }
 
-    std::string toString(){
+    virtual std::string toString() = 0;
+    /*std::string toString(){
         std::string datos= this->nombres + " " + this->apellidos + "\nedad: ";
         datos += std::to_string(this->edad);
         datos += " , altura: ";
@@ -94,7 +95,7 @@ public:
         datos += std::to_string(this->peso);
         datos += " kg.\n";
         return datos;
-    }
+    }*/
 
 };
 

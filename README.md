@@ -35,3 +35,5 @@ v4.1.0 - Abstracción Figura (C++ & Java)
 
 v4.1.1 - Interfaces Figura (C++ & Java)
 
+v4.2.0 - Abtracción Persona (C++ & Java)
+
