@@ -25,5 +25,7 @@ v2.3.0 - Protoclase Producto (C++ Java)
 
 v2.3.1 - Constructores, Setter&Getters Producto (C++ & Java)
 
-2.3.2 - Comprar, Vender (C++ Java)
+v2.3.2 - Comprar, Vender (C++ Java)
+
+v3.1.0 - Herencia Figura/Circulo,Rectangulo,Triangulo/Equilatero,Isosceles,Escaleno Geometría (C++ & Java)
 

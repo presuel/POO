@@ -1,20 +1,24 @@
-public class triangulo {
+public class triangulo extends figura {
     // Atributos
-    private double base;
-    private double altura;
-    private boolean esRectangulo;
+    protected double base;
+    protected double altura;
+    protected boolean esRectangulo;
 
     // Constructores
     public triangulo() {
-
+        super(3);
+        this.base = 0;
+        this.altura = 0;
     }
 
     public triangulo(double base, double altura) {
+        super(3);
         this.base = base;
         this.altura = altura;
     }
 
     public triangulo(double base, double altura, boolean esRectangulo) {
+        super(3);
         this.base = base;
         this.altura = altura;
         this.esRectangulo = esRectangulo;
