@@ -1,0 +1,11 @@
+
+TECNOLOGICO NACIONAL DE MEXICO CAMPUS HOPELCHEN (ITS1412101NA)
+
+Nomina de la plantilla docente.
+---------------------------------------------------------------------------
+|  Clave  | Empleado                                          |   Sueldo  |
+---------------------------------------------------------------------------
+|   20009 | Presuel Rosado, Antonio Armando                   |   9348.00 |
+|   20037 | Altamirano Tinoco, Jose Andres                    |   8364.00 |
+---------------------------------------------------------------------------
+Monto de la nomina: $17712.00 pesos.

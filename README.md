@@ -1,5 +1,5 @@
 Programación Orientada a Objetos (POO)
-enero-febrero de 2023
+enero de 2023
 -------
 v0.1.0 - Inicia repositorio
 
@@ -46,4 +46,8 @@ v5.2.0 - Excepciones(herencia) Persona (C++ & Java)
 v6.1.0 - Archivos Trigonometria (C++ & Java)
 
 v6.2.0 - Archivos Asistencia (C++ & Java)
+
+v6.2.1 - Archivos Binarios Nominas (C++ & Java)
+
+-------
 
