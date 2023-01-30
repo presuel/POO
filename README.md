@@ -43,5 +43,7 @@ v5.1.0 - Excepciones Triangulo (C++ & Java)
 
 v5.2.0 - Excepciones(herencia) Persona (C++ & Java)
 
-v6.1.0 - Archivos Trigonometria  (C++ & Java)
+v6.1.0 - Archivos Trigonometria (C++ & Java)
+
+v6.2.0 - Archivos Asistencia (C++ & Java)
 
