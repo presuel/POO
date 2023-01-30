@@ -41,3 +41,5 @@ v4.2.1 - Interfaces Id Persona (C++ & Java)
 
 v5.1.0 - Excepciones Triangulo (C++ & Java)
 
+v5.2.0 - Excepciones(herencia) Persona (C++ & Java)
+

@@ -61,7 +61,10 @@ public abstract class persona implements id {
     }
 
     public void setEdad(int edad) {
-        this.edad = edad;
+        if (edad > 0 && edad < 130) {
+            this.edad = edad;
+        } else
+            throw new FueraDeRangoException("Edad ingresada irreal, corregir el dato.");
     }
 
     public double getEstatura() {
@@ -69,7 +72,10 @@ public abstract class persona implements id {
     }
 
     public void setEstatura(double estatura) {
-        this.estatura = estatura;
+        if (estatura > 0.0 && estatura < 2.5) {
+            this.estatura = estatura;
+        } else
+            throw new FueraDeRangoException("Altura ingresada irreal, corregir el dato.");
     }
 
     public double getPeso() {
@@ -77,7 +83,10 @@ public abstract class persona implements id {
     }
 
     public void setPeso(double peso) {
-        this.peso = peso;
+        if (peso > 0 && peso < 300) {
+            this.peso = peso;
+        } else
+            throw new IllegalArgumentException("Peso ingresado es irreal, corregir el dato.");
     }
 
     public double IMC() {
@@ -98,3 +107,32 @@ public abstract class persona implements id {
      * }
      */
 }
+
+/*
+ * 
+ * class errorDatos : public std::exception {
+ * public: const char* what() const throw(){
+ * return "Datos Incorrectos.\n\n";
+ * }
+ * };
+ * 
+ * class errorVacio : public errorDatos {
+ * public: const char* what() const throw(){
+ * return "No se ingreso ningun valor.\n\n";
+ * }
+ * };
+ * 
+ * class errorRango : public errorDatos {
+ * public: const char* what() const throw(){
+ * return "Dato fuera del rango de valores permitidos.\n\n";
+ * }
+ * };
+ * 
+ * class errorNoMetodo : public std::exception {
+ * public: const char* what() const throw(){
+ * return "Metodo invocado aun no implementado.\n\n";
+ * }
+ * };
+ * 
+ * 
+ */

@@ -3,6 +3,31 @@
 
 #include <iostream>
 #include "id.h"
+#include <exception> // Permite heredar la clase Exception
+
+class errorDatos : public std::exception {
+    public: const char* what() const throw(){
+        return "Datos Incorrectos.\n\n";
+    }
+};
+
+class errorVacio : public errorDatos {
+    public: const char* what() const throw(){
+        return "No se ingreso ningun valor.\n\n";
+    }
+};
+
+class errorRango : public errorDatos {
+    public: const char* what() const throw(){
+        return "Dato fuera del rango de valores permitidos.\n\n";
+    }
+};
+
+class errorNoMetodo : public std::exception {
+    public: const char* what() const throw(){
+        return "Metodo invocado aun no implementado.\n\n";
+    }
+};
 
 class persona : public id{
 private:
@@ -21,22 +46,37 @@ public:
         this->peso= 0;
     }
     persona(std::string nombres, std::string apellidos){
-        this->nombres= nombres;
-        this->apellidos= apellidos;
+        if ( nombres.length() > 0 ){
+            this->nombres= nombres;
+        } else throw errorVacio();
+
+        if ( apellidos.length() > 0 ){
+            this->apellidos= apellidos;
+        } else throw errorVacio();
         this->edad= 0;
         this->estatura= 0;
         this->peso= 0;
     }
     persona(std::string nombres, std::string apellidos, int edad){
-        this->nombres= nombres;
-        this->apellidos= apellidos;
+        if ( nombres.length() > 0 ){
+            this->nombres= nombres;
+        } else throw errorVacio();
+
+        if ( apellidos.length() > 0 ){
+            this->apellidos= apellidos;
+        } else throw errorVacio();
         this->edad= edad;
         this->estatura= 0;
         this->peso= 0;
     }
     persona(std::string nombres, std::string apellidos, int edad, double estatura, double peso){
-        this->nombres= nombres;
-        this->apellidos= apellidos;
+        if ( nombres.length() > 0 ){
+            this->nombres= nombres;
+        } else throw errorVacio();
+
+        if ( apellidos.length() > 0 ){
+            this->apellidos= apellidos;
+        } else throw errorVacio();
         this->edad= edad;
         this->estatura= estatura;
         this->peso= peso;
@@ -71,15 +111,21 @@ public:
     }
 
     void setEdad(int edad){
-        this->edad= edad;
+        if( edad > 0 && edad < 130 ){
+            this->edad= edad;
+        } else throw errorRango();
     }
 
     void setEstatura(double estatura){
-        this->estatura= estatura;
+        if( estatura > 0.0 && estatura < 2.5 ){
+            this->estatura= estatura;
+        } else throw errorRango(); 
     }
 
     void setPeso(double peso){
-        this->peso= peso;
+        if( peso > 0 && peso < 300){
+            this->peso= peso;
+        } else throw errorRango(); 
     }
 
     double IMC(){
