@@ -39,3 +39,5 @@ v4.2.0 - Abtracción Persona Nomina (C++ & Java)
 
 v4.2.1 - Interfaces Id Persona (C++ & Java)
 
+v5.1.0 - Excepciones Triangulo (C++ & Java)
+

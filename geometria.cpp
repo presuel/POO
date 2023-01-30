@@ -14,14 +14,22 @@ int main(){
     equilatero Equilatero1 (3,5);
     isosceles Isosceles1 (3,4.5,6);
     escaleno Escaleno1 (3, 2, 2, 4);
-    triangulo Triangulo1;
-    Triangulo1.setBase(3);
-    Triangulo1.setAltura(4);
-    cout << "Triangulo 1.\n";
-    cout << Triangulo1.getBase() << "x" << Triangulo1.getAltura() << "\n";
-    cout << "Lados= " << Triangulo1.getLados() << "\n";
-    cout << "Area= " << Triangulo1.Area() << "\n";
-    cout << "-----------------------------\n";
+    // -----------------------------------------------
+    try{
+         triangulo Triangulo1;// (-3, 5);
+         Triangulo1.setBase(-3);
+         Triangulo1.setAltura(5);
+         cout << "Triangulo 1.\n";
+         cout << Triangulo1.getBase() << "x" << Triangulo1.getAltura() << "\n";
+         cout << "Lados= " << Triangulo1.getLados() << "\n";
+         cout << "Area= " << Triangulo1.Area() << "\n";
+         cout << "Perimetro= " << Triangulo1.Perimetro() << "\n";
+         cout << "-----------------------------\n";
+    }catch(int){
+         cout << "[ERROR] Un valor del Triangulo es incorrecto (no puede ser menor o igual a cero).\n";
+    }catch(double){
+         cout << "[ERROR] Sin los valores de los lados no se puede calcular el Perimetro().\n";
+    }
     // -----------------------------------------------
     //Circulo1.setRadio(4);
     cout << "Circulo 1.\n";
